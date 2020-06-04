@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="favicon" rel="shortcut icon" href="https://cdn.discordapp.com/avatars/274615370214670336/5f4d71fe774b3821d25d0ae9eda64791.png?size=2048Link">
+    <meta charset="UTF-8">
+    <title>Umut Gülmez</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    </div> 
+    <img id="profile-img" src="img/buz-kare.png" alt="">  
+    <div class="content">
+        <div class="name">
+            <h1>Hi! I'm <b>Umut</b></h1>
+        </div>   
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+         
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    
+        <ul>
+        <li onclick="window.open('https://discord.com/users/274615370214670336');">
+            <a href="#"><i class="fab fa-discord icon"></i>    </a>
+        </li>
+        <li onclick="window.open('https://steamcommunity.com/id/teamslayerr/');">
+            <a href="#"><i class="fab fa-steam icon"></i></a>
+        </li>
+        <li onclick="window.open('https://github.com/UmutGulmez');">
+            <a href="#" ><i class="fab fa-github icon"></i></a></li>
+        <li onclick="window.open('https://www.instagram.com/umutxglmz/');">
+            <a href="#"><i class="fab fa-instagram icon"></i></a></li>
+        </ul>
+    </div>  
+</body>
+</html>
+<style>
+
+#profile-img {
+    border-radius: 50% !important;
+    width: 16%;
+    display: block;
+    margin: 10% 40% ;
+    transition: box-shadow 0.1s, transform 0.1s;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    border-radius: 100%;
+    border-color: #ffffff;
+    border-style: solid;
+    position: absolute;
+}
+
+.name {
+     -webkit-animation: mover 1.5s infinite  alternate; 
+     animation: mover 1.5s infinite  alternate;
+     -webkit-animation-timing-function: ease-in-out;
+     animation-timing-function: ease-in-out;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+     animation-delay: 3s;
+}
+
+@keyframes mover {
+     0% { transform: translateY(0); }
+     100% { transform: translateY(-15px); }
+}
+
+
+.name {
+    color: white !important;
+    position: absolute;
+    text-align: center !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 32%;
+    margin-top: 29%;
+    width: 32%;
+}
+
+.name h1 {
+  overflow: hidden; 
+  border-right: .15em; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#profile-img:hover {
+    border-radius: 32% !important;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    border-color: #68ddef;
+}
+
+html, body {
+	background: #2C2F33;
+    margin-top: -2%;
+}
+ 
+/* ---- particles.js  ---- */ 
+#particles-js { 
+    position: absolute; 
+    width: 99%; 
+    height: 100%;  
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  margin-top: 38% !important;
+  margin-left: 47% !important;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #171515;
+}
+
+ul li:nth-child(2) a:before{
+  background: #171515;
+}
+
+ul li:nth-child(3) a:before {
+  background: #171515;
+}
+
+ul li:nth-child(4) a:before {
+  background: #171515;
+}
+
+</style>
+
+<script>
+let el = document.getElementById('profile-img')
+
+const height = el.clientHeight
+const width = el.clientWidth
+
+el.addEventListener('mousemove', handleMove)
+
+function handleMove(e) {
+  const xVal = e.layerX
+  const yVal = e.layerY
+  const yRotation = 20 * ((xVal - width / 2) / width)
+  const xRotation = -20 * ((yVal - height / 2) / height)
+  const string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+  
+  el.style.transform = string
+}
+
+el.addEventListener('mouseout', function() {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+})
+
+el.addEventListener('mousedown', function() {
+  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+})
+
+el.addEventListener('mouseup', function() {
+  el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
+})
+
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 200,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 4,
+                "size_min": 0.3,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 600
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 250,
+                "size": 0,
+                "duration": 2,
+                "opacity": 0,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+</script>
