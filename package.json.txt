@@ -1,0 +1,15 @@
+{
+  "name": "Umut Gülmez",
+  "version": "0.0.3",
+  "description": "Check umutgulmez.github.io",
+  "main": "index.html",
+  "private": false,
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
+  
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+}
