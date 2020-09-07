@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://source.unsplash.com/random');
+    background-repeat: none;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+    border: solid 3px #fff;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+p {
+    color: white;
+    font: bold 200% Consolas, Monaco, monospace;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+p.title {
+    width: calc(var(--length) * 1ch);
+    border-right: 2px solid;
+    overflow: hidden;
+    animation: typing calc(var(--length) * .4s) steps(var(--length)), caret .5s step-end infinite alternate;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+}
+
+.socials li {
+    position: relative;
+    margin: 1em 0.5em;
+    padding: 0.5em 0.6em;
+    font-size: 1.5em;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+}
+
+i {
+    transition: all 150ms ease-in;
+}
+
+.socials li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: #fff;
+    transition: all 300ms ease-in;
+    z-index: -1;
+}
+
+.socials li:hover i {
+    color: #1a1a1a;
+    transform: rotateY(360deg);
+}
+
+.socials li:hover::after {
+    height: 100%;
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
