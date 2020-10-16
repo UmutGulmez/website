@@ -1,0 +1,342 @@
+
+
+
+h1, h2, h3, h4, h5, p, .title, .medium-widget, .medium-widget-article__content {
+  color: white;
+  text-color: white;
+}
+
+body, html {
+  background-color: #000 !important;
+  padding-bottom: 50px;
+}
+
+
+.navbar-item, a  {
+  color: white;
+}
+
+.navbar-item:hover {
+    color: #dbdbdb !important;
+}
+
+.navbar-item:active {
+  background-color: #1A1C23 !important;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+@media screen and (min-width: 1087px) {
+  .navbar {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar {
+    padding-bottom: 50px;
+  }
+}
+
+.navbar-item, .navbar-link {
+  color: #F4F5F7 !important;
+}
+
+.navbar-dropdown {
+  background-color: #1A1C23 !important;  
+}
+
+.navbar-item:hover, .navbar-link:hover  {
+  color: #9E9E9E !important;
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #1A1C23 !important;
+ }
+}
+
+.pp {
+  width: 200px;
+}
+
+.banner-subtitle {
+  color: #9E9E9E ;
+}
+
+.banner {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1087px) {
+  .langs {
+    padding-left: 70px;
+    padding-right: 90px;
+    max-width: 430px;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .bars {
+    padding-left: 27%;
+  }
+}
+
+.bar {
+  max-width: 200px;
+  padding-bottom: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #1a1c21 !important; 
+}
+
+.js progress::-webkit-progress-value {
+  background-color: #E8D44D !important;
+}
+
+.html progress::-webkit-progress-value {
+  background-color: #E34C26 !important;
+}
+
+.py progress::-webkit-progress-value {
+  background-color: #326D9D !important;
+}
+
+.css progress::-webkit-progress-value {
+  background-color: #563D7C !important;
+}
+
+.node progress::-webkit-progress-value {
+  background-color: #83CD29 !important;
+}
+
+.social {
+  background-color: #1a1c21;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  font-size: 70%;
+}
+
+a:hover {
+  color: #9E9E9E  !important;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #1a1c21  !important; 
+  -webkit-box-shadow: 6px 6px 19px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 19px -11px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 19px -11px rgba(0,0,0,0.75);
+
+}
+
+p, .title, i, h1, h2 {
+  color: white;
+}
+
+.card:hover {
+  transition: 0.2s;
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 1334px) {
+  .projects-container {
+    max-width: 80% !important;
+    margin: auto;
+
+  }
+}
+
+span.new {
+  text-transform: uppercase;
+  background-color: rgba(255,0,0,.85);
+  font-size: x-small;
+  vertical-align: text-bottom;
+  padding: 2px 4px;
+  border-radius: 1em;
+  transition: background-color .2s ease-in-out;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  vertical-align: middle !important;
+}
+
+
+.pp:hover {
+  transform: scale(1.03); 
+  transition: 0.2s;
+}
+
+.medium-widget-article__title, .medium-widget-article__description, .medium-widget-article__info, .medium-widget-article__author-name {
+  color: white !important;
+}
+
+.medium-widget-article__title:hover {
+  color: #9E9E9E !important;
+}
+
+.medium-widget-article__grid {
+  background-color: #1A1C21;
+  border: 30px solid #1A1C21;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1334px) {
+  .blogs {
+    max-width: 70% !important;
+    margin: auto;
+  }
+}
+
+.profile-box {
+  width: 600px;
+  height: 300px;
+  border-radius: 8px !important;
+  margin: auto;
+}
+
+.box-header {
+  height: 120px;
+  background-color: #202225;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  padding: 20px;
+}
+
+.box-body {
+  height: 180px;
+  background-color: #2F3136;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.box-header .image {
+  width: 80px;
+}
+
+.img-columns {
+  margin: 0 20px 0 0;
+}
+
+.header-info {
+  height: 52px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.discrim {
+  color: #b9bbbe;
+  font-size: 14px;
+}
+
+.p-badges .badge .badge-img{
+  width: 24px !important;
+  height: 24px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  cursor: pointer;
+}
+
+.p-badges {
+  margin: 8px 0 0;
+}
+
+.badge.column {
+  padding: 0px;
+  margin-right: 6px;
+}
+
+.balance {
+    background-image: url(https://discord.com/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
+}
+
+.developer {
+    background-image: url(https://discord.com/assets/45cd06af582dcd3c6b79370b4e3630de.svg);
+}
+
+.early-sup {
+    background-image: url(https://discord.com/assets/23e59d799436a73c024819f84ea0b627.svg);
+}
+
+.nitro {
+    background-image: url(https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg);
+}
+
+.boost {
+    background-image: url(https://discord.com/assets/fbb6f1e160280f0e9aeb5d7c452eefe1.svg);
+}
+
+.connectedAccounts {
+  padding: 20px 20px 0 20px;
+}
+
+.connectedAccount {
+  border-radius: 3px;
+  padding: 8px 14px 8px 8px;
+  width: 240px !important;
+  border: 1px solid;
+  border-color: hsla(0,0%,100%,0.06);
+}
+
+
+.menu-toggle-btn {
+
+  width: 250px;
+  background-color: #2188FF ;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  font-size: 128%;
+  min-height: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  margin-top: 10px;
+}
+
+.menu-toggle-btn:hover {
+  
+  width: 250px;
+  background-color: #2188FF ;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  font-size: 128%;
+  min-height: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  margin-top: 10px;
+  transition: 0.2s;
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
+}
