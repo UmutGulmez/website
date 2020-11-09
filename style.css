@@ -340,3 +340,8 @@ span.new {
   -moz-box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
   box-shadow: 6px 6px 19px -5px rgba(0,0,0,0.75);
 }
+
+.whoami {
+  width: 425px !important;
+  font-size: 110%;
+}
