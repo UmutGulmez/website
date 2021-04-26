@@ -1,42 +1,67 @@
 <template>
   <div>
+    <div v-if="$fetchState.pending">
+      <h4 class="title is-4 not-listening">Loading!</h4>
+    </div>
+    <div v-else-if="$fetchState.error">
+      <h4 class="title is-4 not-listening">Error!</h4>
+    </div>
     <div
+      v-else
       class="box"
       :style="`
-      background: url(${song.imageUrl}) no-repeat center;
+      background: url(${
+        spotifyData.listening_to_spotify
+          ? spotifyData.spotify.album_art_url
+          : null
+      }) no-repeat center;
       background-size: cover;
       padding: 0;
       `"
     >
       <div class="inside-box">
         <div class="heading">Spotify Now Playing</div>
-        <div v-if="songData.data.listening_to_spotify">
-          <div class="columns">
-            <div class="column">
-              <h5 class="title is-5 song-title">{{ song.title }}</h5>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="bar-div">
-                <div class="bar">
-                  <progress
-                    class="progress is-small has-text-white"
-                    :value="song.timestamps.now - song.timestamps.start"
-                    :max="song.timestamps.end - song.timestamps.start"
-                  ></progress>
-                </div>
+        <div>
+          <div v-if="spotifyData.listening_to_spotify">
+            <div class="columns">
+              <div class="column">
+                <h5 class="title is-5 song-title">
+                  {{ this.spotifyData.spotify.song }}
+                </h5>
               </div>
             </div>
-            <div class="column is-2 is-hidden-touch">
-              <p class="song-end-time">
-                {{ msToSeconds(song.timestamps.end - song.timestamps.start) }}
-              </p>
+            <div class="columns">
+              <div class="column">
+                <div class="bar-div">
+                  <div class="bar">
+                    <progress
+                      class="progress is-small has-text-white"
+                      :value="
+                        Date.now() - spotifyData.activities[1].timestamps.start
+                      "
+                      :max="
+                        spotifyData.activities[1].timestamps.end -
+                        spotifyData.activities[1].timestamps.start
+                      "
+                    ></progress>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-2 is-hidden-touch">
+                <p class="song-end-time">
+                  {{
+                    msToSeconds(
+                      spotifyData.activities[1].timestamps.end -
+                        spotifyData.activities[1].timestamps.start
+                    )
+                  }}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div v-else>
-          <h4 class="title is-4 not-listening">Not Listening!</h4>
+          <div v-else>
+            <h4 class="title is-4 not-listening">Not Listening!</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -45,20 +70,9 @@
 
 <script>
 export default {
-  props: ['songData'],
   data() {
     return {
-      song: {
-        title: this.songData.data.spotify.song || 'Loading..',
-        imageUrl:
-          this.songData.data.spotify.album_art_url ||
-          'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Blank_button.svg/1200px-Blank_button.svg.png',
-        timestamps: {
-          start: this.songData.data.activities[1].timestamps.start || '0',
-          end: this.songData.data.activities[1].timestamps.end || '0',
-          now: Date.now(),
-        },
-      },
+      spotifyData: {},
     }
   },
   methods: {
@@ -67,6 +81,13 @@ export default {
       var seconds = ((ms % 60000) / 1000).toFixed(0)
       return minutes + ':' + (seconds < 10 ? '0' : '') + seconds
     },
+  },
+  async fetch() {
+    var songData = await fetch(
+      'https://api.lanyard.rest/v1/users/274615370214670336'
+    ).then((res) => res.json())
+
+    this.spotifyData = songData.data
   },
 }
 </script>

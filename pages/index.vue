@@ -59,7 +59,7 @@
           </div>
           <div class="column is-3">
             <div class="now-playing-div">
-              <NowPlaying :songData="songData" />
+              <NowPlaying />
             </div>
           </div>
         </div>
@@ -138,44 +138,6 @@ export default {
   components: {
     Navbar,
     NowPlaying,
-  },
-  async asyncData({ $http }) {
-    var songData = await $http.$get(
-      'https://api.lanyard.rest/v1/users/274615370214670336'
-    )
-    var dataExample = {
-      success: true,
-      data: {
-        spotify: {
-          track_id: '0',
-          timestamps: {
-            start: 0,
-            end: 0,
-          },
-          song: '',
-          artist: '',
-          album_art_url: '',
-          album: '',
-        },
-        listening_to_spotify: false,
-        discord_status: 'dnd',
-        activities: [
-          {},
-          {
-            timestamps: {
-              start: 1617820231365,
-              end: 1617820767431,
-            },
-          },
-        ],
-      },
-    }
-    console.log(songData)
-    if (songData.data.listening_to_spotify !== true) {
-      return { songData: dataExample }
-    } else {
-      return { songData }
-    }
   },
 }
 </script>
