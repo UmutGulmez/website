@@ -1,40 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 :root {
-    --color-first: #242a44;
-    --color-secondary: #1b2039;
-    --color-third: #303d61;
-    --text-first: #f5f5f5;
-    --text-secondary: rgba(255, 255, 255, 0.575);
+  --color-first: #242a44;
+  --color-secondary: #1b2039;
+  --color-third: #303d61;
+  --text-first: #f5f5f5;
+  --text-secondary: rgba(255, 255, 255, 0.575);
 }
 
-html, body {
-    background-color: var(--color-first);
-    font-family: 'Heebo', sans-serif;
+html,
+body {
+  background-color: var(--color-first);
+  font-family: 'Heebo', sans-serif;
 }
 
 .container {
-    max-width: 1344px;
-    margin: 0 auto;
+  max-width: 1344px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1344px) {
-    .container {
-        max-width: 85%;
-        margin: 0 auto;
-    }
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
   }
+}
 
-h1, h2, h3, h4, h5, p, title, .heading {
-    color: var(--text-first);
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+title,
+.heading {
+  color: var(--text-first);
 }
 
 a {
-    color: var(--text-secondary)
+  color: var(--text-secondary);
 }
 
 .icon {
-    font-size: 70%;
+  font-size: 70%;
 }
 
 .medium-widget-article__title,
@@ -54,3 +62,10 @@ a {
   border-radius: 15px;
 }
 
+i {
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  &:hover {
+    color: var(--text-first);
+  }
+}

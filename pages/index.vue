@@ -19,42 +19,7 @@
               <h2 class="subtitle is-3 has-text-centered-touch">
                 Web Deveoper
               </h2>
-              <div class="socials has-text-centered-mobile">
-                <a
-                  href="https://discord.com/users/274615370214670336"
-                  target="_blank"
-                >
-                  <span class="icon social">
-                    <center>
-                      <i class="fab fa-discord"></i>
-                    </center>
-                  </span>
-                </a>
-                <a href="https://github.com/UmutGulmez" target="_blank">
-                  <span class="icon social">
-                    <center>
-                      <i class="fab fa-github"></i>
-                    </center>
-                  </span>
-                </a>
-                <a href="https://twitter.com/umutpy" target="_blank">
-                  <span class="icon social">
-                    <center>
-                      <i class="fab fa-twitter"></i>
-                    </center>
-                  </span>
-                </a>
-                <a
-                  href="https://steamcommunity.com/id/klyne312/"
-                  target="_blank"
-                >
-                  <span class="icon social">
-                    <center>
-                      <i class="fab fa-steam"></i>
-                    </center>
-                  </span>
-                </a>
-              </div>
+              <Socials />
             </div>
           </div>
           <div class="column is-3">
@@ -133,11 +98,13 @@
 <script>
 import Navbar from '~/components/common/Navbar'
 import NowPlaying from '~/components/home/SpotifyNowPlaying'
+import Socials from '~/components/home/Socials'
 
 export default {
   components: {
     Navbar,
     NowPlaying,
+    Socials,
   },
 }
 </script>
@@ -159,22 +126,6 @@ export default {
 
 a:hover {
   color: #9e9e9e !important;
-}
-
-.social {
-  background-color: var(--color-third);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 0 4px 0 0;
-}
-
-i {
-  color: var(--text-secondary);
-  font-size: 1.4rem;
-  &:hover {
-    color: var(--text-first);
-  }
 }
 
 .language {

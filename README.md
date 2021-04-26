@@ -1,6 +1,22 @@
-# blog
+# 🔥 umutgulmez.github.io
 
-## Build Setup
+### 🔧 Demo
+
+Visit the demo [here](umutdev.xyz).
+
+![a](/static/readmeBannerImage.png)
+
+### Main
+
+If there is a question about the site, such as an error, you can reach me on [discord](https://discord.com/users/274615370214670336) or in the issue section.
+
+You can open a "pull request" to this repository and submit your changes to help the site's design, code, typos and any kind of help you can think of.
+
+### ⚖️ License
+
+Important! "Licensed with GPL-3.0 License! Please read the LICENSE.md before distribution!"
+
+### 📩 Build Setup
 
 ```bash
 # install dependencies
@@ -17,4 +33,6 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### ✨ Special
+
+- This website is made using [Nuxt.js](https://nuxtjs.org) and [Buefy](https://buefy.org/) with 💙
