@@ -45,27 +45,18 @@ a {
   font-size: 70%;
 }
 
-.medium-widget-article__title,
-.medium-widget-article__description,
-.medium-widget-article__info,
-.medium-widget-article__author-name {
-  color: white !important;
-}
-
-.medium-widget-article__title:hover {
-  color: #9e9e9e !important;
-}
-
-.medium-widget-article__grid {
-  background-color: var(--color-third);
-  border: 30px solid var(--color-third);
-  border-radius: 15px;
-}
-
 i {
   color: var(--text-secondary);
   font-size: 1.4rem;
   &:hover {
     color: var(--text-first);
   }
+}
+
+.bg-color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.min-390px-height {
+  min-height: 390px;
 }

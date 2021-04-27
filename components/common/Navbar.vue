@@ -8,9 +8,9 @@
       </template>
 
       <template #end>
-        <b-navbar-item> Ana Sayfa </b-navbar-item>
-        <b-navbar-item> Projeler </b-navbar-item>
-        <b-navbar-item> İletişim </b-navbar-item>
+        <b-navbar-item> Home </b-navbar-item>
+        <b-navbar-item> Projects </b-navbar-item>
+        <b-navbar-item> Contact </b-navbar-item>
       </template>
     </b-navbar>
   </div>
@@ -33,7 +33,7 @@ a {
     color: var(--text-first);
   }
   &.navbar-item:hover {
-      background-color: var(--color-first);
+    background-color: var(--color-first);
   }
 }
 </style>

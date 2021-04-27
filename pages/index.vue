@@ -30,66 +30,13 @@
         </div>
         <div class="columns margin-120px-desktop">
           <div class="column">
-            <div class="box bg-color-secondary min-390px-height">
-              <p class="heading has-text-centered">Who am I?</p>
-              <br />
-              <p class="whoami-text">
-                I am a Turkish science high school student interested in coding.
-                My goal is is to make things that people can easily use. I'm
-                trying to learn most of the things that I can learn, although I
-                am mostly focused on JavaScript. I enjoy sharing my projects as
-                open source. So this website is also open source!
-                <a href="https://github.com/UmutGulmez/umutgulmez.github.io">
-                  Check out my Github!
-                </a>
-              </p>
-            </div>
+            <WhoAmIBox />
           </div>
           <div class="column">
-            <div class="box bg-color-secondary min-390px-height">
-              <p class="heading has-text-centered">Technologies I Use</p>
-              <br />
-              <div class="columns is-multiline">
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-js-square language-icon"></i>
-                    <span class="language-text">JavaScript</span>
-                  </div>
-                </div>
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-html5 language-icon"></i>
-                    <span class="language-text">HTML5</span>
-                  </div>
-                </div>
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-vuejs language-icon"></i>
-                    <span class="language-text">Vue.js & Nuxt.js</span>
-                  </div>
-                </div>
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-sass language-icon"></i>
-                    <span class="language-text">Sass</span>
-                  </div>
-                </div>
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-node-js language-icon"></i>
-                    <span class="language-text">Node.js</span>
-                  </div>
-                </div>
-                <div class="column is-half">
-                  <div class="box language">
-                    <i class="fab fa-python language-icon"></i>
-                    <span class="language-text">Python</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <TechsBox />
           </div>
         </div>
+        <Blogs />
       </div>
     </div>
   </div>
@@ -99,12 +46,18 @@
 import Navbar from '~/components/common/Navbar'
 import NowPlaying from '~/components/home/SpotifyNowPlaying'
 import Socials from '~/components/home/Socials'
+import TechsBox from '~/components/home/TechsBox'
+import WhoAmIBox from '~/components/home/WhoAmIBox'
+import Blogs from '~/components/home/Blogs'
 
 export default {
   components: {
     Navbar,
     NowPlaying,
     Socials,
+    TechsBox,
+    WhoAmIBox,
+    Blogs,
   },
 }
 </script>
@@ -128,30 +81,8 @@ a:hover {
   color: #9e9e9e !important;
 }
 
-.language {
-  background-color: var(--color-third);
-  padding: 15px 20px;
-}
-
-.language-icon {
-  padding: 0 10px;
-}
-
-.language-text {
-  color: var(--text-first);
-}
-
 .subtitle {
   color: var(--text-secondary);
-}
-
-.who-am-i {
-  margin: 75px 0;
-}
-
-.whoami-text {
-  font-size: 1.4rem;
-  margin: 10px;
 }
 
 .middle-column {
@@ -162,35 +93,8 @@ a:hover {
   margin: 50px 0;
 }
 
-.menu-toggle-btn {
-  width: 250px;
-  background-color: var(--color-secondary);
-  border: 0;
-  padding: 10px 15px;
-  color: #53e3a6;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 18px;
-  transition-duration: 0.25s;
-  font-size: 128%;
-  min-height: 50px;
-  border-radius: 5px;
-  margin-top: 10px;
-  &:hover {
-    transform: translateY(-3px);
-  }
-}
-
 .latest-blogs {
   margin-bottom: 0.7rem;
-}
-
-.bg-color-secondary {
-  background-color: var(--color-secondary);
-}
-
-.min-390px-height {
-  min-height: 390px;
 }
 
 @media only screen and (min-width: 600px) {
