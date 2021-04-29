@@ -3,7 +3,7 @@
     <div class="container">
       <div class="level">
         <div class="level-left">
-          <div class="content copyright">
+          <div class="content copyright has-text-centered">
             Copyright <i class="far fa-copyright"></i> Umut.py
           </div>
         </div>
