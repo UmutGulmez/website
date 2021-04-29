@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="title is-3 has-text-white">My Repositorys</div>
+    <div class="title is-4 has-text-white has-text-centered">
+      My Repositorys
+    </div>
     <div class="columns is-multiline">
       <div
         class="column is-one-third"

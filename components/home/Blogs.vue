@@ -1,6 +1,8 @@
 <template>
   <div class="blogs has-text-white">
-    <div class="title is-3 has-text-white">My Latest Blogs</div>
+    <div class="title is-4 has-text-white has-text-centered">
+      My Latest Blogs
+    </div>
     <div id="medium-widget"></div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>
@@ -8,9 +10,9 @@
         renderTo: '#medium-widget',
         params: {
           resource: 'https://medium.com/@umut.py',
-          postsPerLine: 2,
-          limit: 4,
-          picture: 'small',
+          postsPerLine: 3,
+          limit: 6,
+          picture: 'big',
           fields: ['description', 'author', 'claps', 'likes', 'publishAt'],
           ratio: 'landscape',
         },
@@ -61,14 +63,11 @@ export default {}
   color: #9e9e9e !important;
 }
 
-.medium-widget-article__grid {
-  background-color: var(--color-secondary);
-  padding: 20px 25px;
-  border-radius: 8px;
-}
-
 .medium-widget-article__item {
-  max-width: 50%;
+  max-width: 33%;
+  padding: 1rem;
+  background-color: var(--color-secondary);
+  border-radius: 8px;
 }
 
 .medium-widget-article__image img {
@@ -86,7 +85,7 @@ export default {}
   font-size: 18px;
   transition-duration: 0.25s;
   font-size: 128%;
-  min-height: 55px;
+  min-height: 65px;
   border-radius: 5px;
   width: 70%;
   margin-top: 40px;

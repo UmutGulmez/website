@@ -9,8 +9,13 @@
 
       <template #end>
         <b-navbar-item> Home </b-navbar-item>
-        <b-navbar-item> Projects </b-navbar-item>
-        <b-navbar-item> Contact </b-navbar-item>
+        <a
+          href="https://medium.com/@umut.py"
+          target="_blank"
+          class="navbar-item"
+        >
+          Blog
+        </a>
       </template>
     </b-navbar>
   </div>

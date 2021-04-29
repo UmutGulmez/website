@@ -37,18 +37,21 @@
           <TechsBox />
         </div>
       </div>
-      <div style="margin: 200px 0"></div>
+      <div style="margin: 150px 0"></div>
       <Blogs />
-      <div style="margin: 200px 0"></div>
+      <div style="margin: 150px 0"></div>
       <GithubRepos />
     </div>
+    <div style="margin: 150px 0"></div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/common/Navbar'
+import Footer from '~/components/common/Footer'
 import NowPlaying from '~/components/home/SpotifyNowPlaying'
-import Socials from '~/components/home/Socials'
+import Socials from '~/components/Socials'
 import TechsBox from '~/components/home/TechsBox'
 import WhoAmIBox from '~/components/home/WhoAmIBox'
 import Blogs from '~/components/home/Blogs'
@@ -57,6 +60,7 @@ import GithubRepos from '~/components/home/GithubRepos'
 export default {
   components: {
     Navbar,
+    Footer,
     NowPlaying,
     Socials,
     TechsBox,
