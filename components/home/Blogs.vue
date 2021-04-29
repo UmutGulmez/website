@@ -100,7 +100,7 @@ export default {}
   .medium-widget-article__image img {
     display: none;
   }
-  .medium-widget-article__grid {
+  .medium-widget-article__item {
     max-width: 100%;
   }
 }
