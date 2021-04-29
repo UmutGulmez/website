@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title is-4 has-text-white has-text-centered">
-      My Repositorys
+      My repositories
     </div>
     <div class="columns is-multiline">
       <div
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import GithubRepoBox from '@/components/home/GithubReopBox'
+import GithubRepoBox from '@/components/home/GithubRepoBox'
 
 export default {
   data() {
