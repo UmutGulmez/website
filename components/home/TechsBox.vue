@@ -1,5 +1,5 @@
 <template>
-  <div class="box bg-color-secondary min-390px-height">
+  <div class="box bg-color-secondary min-370px-height">
     <p class="heading has-text-centered">Technologies I Use</p>
     <br />
     <div class="columns is-multiline">

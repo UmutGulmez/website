@@ -51,6 +51,10 @@ export default {}
 .medium-widget-article__clap,
 .medium-widget-article__date {
   color: var(--text-secondary);
+  & ::before {
+    opacity: 1;
+    fill: green;
+  }
 }
 
 .medium-widget-article__title:hover {
@@ -58,14 +62,18 @@ export default {}
 }
 
 .medium-widget-article__grid {
-  background-color: var(--color-third);
-  border: 30px solid var(--color-third);
-  border-radius: 15px;
+  background-color: var(--color-secondary);
+  padding: 20px 25px;
+  border-radius: 8px;
+}
+
+.medium-widget-article__item {
   max-width: 50%;
 }
 
 .medium-widget-article__image img {
   max-width: none;
+  border-radius: 8px;
 }
 
 .see-more-button {

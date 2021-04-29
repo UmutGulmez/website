@@ -28,16 +28,19 @@
             </div>
           </div>
         </div>
-        <div class="columns margin-120px-desktop">
-          <div class="column">
-            <WhoAmIBox />
-          </div>
-          <div class="column">
-            <TechsBox />
-          </div>
-        </div>
-        <Blogs />
       </div>
+      <div class="columns">
+        <div class="column">
+          <WhoAmIBox />
+        </div>
+        <div class="column">
+          <TechsBox />
+        </div>
+      </div>
+      <div style="margin: 200px 0"></div>
+      <Blogs />
+      <div style="margin: 200px 0"></div>
+      <GithubRepos />
     </div>
   </div>
 </template>
@@ -49,6 +52,7 @@ import Socials from '~/components/home/Socials'
 import TechsBox from '~/components/home/TechsBox'
 import WhoAmIBox from '~/components/home/WhoAmIBox'
 import Blogs from '~/components/home/Blogs'
+import GithubRepos from '~/components/home/GithubRepos'
 
 export default {
   components: {
@@ -58,6 +62,7 @@ export default {
     TechsBox,
     WhoAmIBox,
     Blogs,
+    GithubRepos,
   },
 }
 </script>
@@ -95,11 +100,5 @@ a:hover {
 
 .latest-blogs {
   margin-bottom: 0.7rem;
-}
-
-@media only screen and (min-width: 600px) {
-  .margin-120px-desktop {
-    margin: 120px;
-  }
 }
 </style>

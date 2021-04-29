@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 :root {
-  --color-first: #242a44;
-  --color-secondary: #1b2039;
-  --color-third: #303d61;
-  --text-first: #f5f5f5;
-  --text-secondary: rgba(255, 255, 255, 0.575);
+  --color-first: #111827;
+  --color-secondary: #1e293b;
+  --color-third: #334155;
+  --text-first: #fafafa;
+  --text-secondary: #d4d4d8;
+  --text-third: #969696;
 }
 
 html,
@@ -39,6 +40,9 @@ title,
 
 a {
   color: var(--text-secondary);
+  &:hover {
+    color: var(--text-first);
+  }
 }
 
 .icon {
@@ -57,6 +61,6 @@ i {
   background-color: var(--color-secondary);
 }
 
-.min-390px-height {
-  min-height: 390px;
+.min-370px-height {
+  min-height: 370px;
 }
