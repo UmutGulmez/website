@@ -4,7 +4,7 @@
 
 Visit the demo [here](umutdev.xyz).
 
-![a](/static/readmeImage.png)
+![a](/static/readmeBannerImage.png)
 
 ### Main
 
