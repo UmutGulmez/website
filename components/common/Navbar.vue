@@ -40,6 +40,7 @@ a {
   padding: 0.7rem 2rem;
   &:hover {
     background-color: var(--color-third) !important;
+    transition: all 0.4s;
   }
 }
 </style>
