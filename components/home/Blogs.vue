@@ -68,6 +68,10 @@ export default {}
   padding: 1rem;
   background-color: var(--color-secondary);
   border-radius: 8px;
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.4s;
+  }
 }
 
 .medium-widget-article__image img {

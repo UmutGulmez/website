@@ -14,6 +14,7 @@
           :desc="repo.description"
           :lang="repo.language"
           :starCount="repo.stargazers_count"
+          :url="repo.html_url"
         />
       </div>
     </div>
