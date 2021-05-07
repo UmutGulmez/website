@@ -44,7 +44,7 @@ export default {}
 
 .medium-widget-article__title,
 .medium-widget-article__author-name {
-  color: var(--text-first);
+  color: var(--text-first) !important;
 }
 
 .medium-widget-article__description,
@@ -52,10 +52,9 @@ export default {}
 .medium-widget-article__like,
 .medium-widget-article__clap,
 .medium-widget-article__date {
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
   & ::before {
     opacity: 1;
-    fill: green;
   }
 }
 
@@ -66,7 +65,7 @@ export default {}
 .medium-widget-article__item {
   max-width: 33%;
   padding: 1rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
   border-radius: 8px;
   &:hover {
     transform: scale(1.01);
@@ -80,10 +79,9 @@ export default {}
 }
 
 .see-more-button {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
   border-radius: 3px;
   cursor: pointer;
   font-size: 18px;
