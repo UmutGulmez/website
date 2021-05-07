@@ -4,7 +4,7 @@
       <div class="column is-3">
         <div class="profile-picture">
           <b-image
-            src="https://www.umutdev.xyz/assets/logo-square.webp"
+            src="https://cdn.discordapp.com/attachments/813903009808908288/840179611601338378/logo-square.webp"
             :rounded="true"
             alt="Umut.py profile picture."
             v-if="!loading"
