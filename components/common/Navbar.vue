@@ -42,5 +42,11 @@ a {
     background-color: var(--color-third) !important;
     transition: all 0.4s;
   }
+  &:focus,
+  :focus-within {
+    background-color: var(--color-third) !important;
+    transition: all 0.4s;
+    color: var(--text-first) !important;
+  }
 }
 </style>
