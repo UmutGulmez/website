@@ -21,7 +21,7 @@
       <div class="column is-6">
         <div style="margin-top: 1.25rem">
           <h1 class="title is-1 has-text-centered-touch">Umut.py</h1>
-          <h2 class="subtitle is-3 has-text-centered-touch">Web Deveoper</h2>
+          <h2 class="subtitle is-3 has-text-centered-touch">Web Developer</h2>
           <Socials />
         </div>
       </div>
