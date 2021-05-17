@@ -11,6 +11,74 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        name: 'keywords',
+        content:
+          'Umut.py, umutpy, umutdev, Umut Gülmez, Gülmez, umut.py, Umutdev, umutdev.xyz, Umutdev.xyz, Umut, umut',
+      },
+      {
+        name: 'author',
+        content: 'Umut.py',
+      },
+      {
+        name: 'robots',
+        content: 'index, follow',
+      },
+      {
+        name: 'copyright',
+        content: '(c) 2021 Umut.py Tüm Hakları Saklıdır.',
+      },
+      {
+        name: 'content-language',
+        content: 'en',
+      },
+      // Open Graph - Facebook metada's
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:url',
+        content: 'https://umutdev.xyz',
+      },
+      {
+        property: 'og:title',
+        content: 'Umut.py | umutdev.xyz',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Umut Gülmez is a frontend developer whose native language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
+      },
+      {
+        property: 'og:image',
+        content:
+          'https://raw.githubusercontent.com/UmutGulmez/umutgulmez.github.io/master/static/readmeBannerImage.png',
+      },
+
+      // Twitter metada's
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        property: 'twitter:url',
+        content: 'https://umutdev.xyz',
+      },
+      {
+        property: 'twitter:title',
+        content: 'Umut.py | umutdev.xyz',
+      },
+      {
+        property: 'twitter:description',
+        content:
+          'Umut Gülmez is a frontend developer whose native language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
+      },
+      {
+        property: 'twitter:image',
+        content:
+          'https://raw.githubusercontent.com/UmutGulmez/umutgulmez.github.io/master/static/readmeBannerImage.png',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },

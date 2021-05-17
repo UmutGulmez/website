@@ -51,6 +51,13 @@ export default {}
 .language {
   background-color: var(--color-third);
   padding: 15px 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.4s;
+  }
 }
 
 .language-icon {
