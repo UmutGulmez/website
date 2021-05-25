@@ -48,7 +48,7 @@ export default {
       {
         property: 'og:description',
         content:
-          'Umut Gülmez is a frontend developer whose native language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
+          'Umut Gülmez is a Turkish frontend developer whose main language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
       },
       {
         property: 'og:image',
@@ -72,7 +72,7 @@ export default {
       {
         property: 'twitter:description',
         content:
-          'Umut Gülmez is a frontend developer whose native language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
+          'Umut Gülmez is a Turkish frontend developer whose main language is javascript. Umut.py also develops Discord bots using node.js. His website is umutdev.xyz  .',
       },
       {
         property: 'twitter:image',

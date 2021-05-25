@@ -38,7 +38,9 @@ export default {
       'https://api.github.com/users/UmutGulmez/repos'
     ).then((res) => res.json())
 
-    this.repositoryData = data.slice(0, 6)
+    data = data.filter((x) => x.language)
+    data = data.sort((a, b) => b.stargazers_count - a.stargazers_count)
+    this.repositoryData = data.slice(0, 9)
   },
 }
 </script>

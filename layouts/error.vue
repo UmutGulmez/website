@@ -8,12 +8,14 @@
           <nuxt-link to="/"> Redirect to Home </nuxt-link>
         </div>
         <div class="column is-half">
-          <img
-            class="notfound-image"
-            src="https://media2.giphy.com/media/WQOIEQRgiK722l3PQT/giphy.gif?cid=790b761114885a46a74f636cb3c5033e0935984fc71e793f&rid=giphy.gif&ct=g"
-            alt="umutdev.xyz 404 not found image"
-            draggable="false"
-          />
+          <center>
+            <img
+              class="notfound-image"
+              src="https://media2.giphy.com/media/WQOIEQRgiK722l3PQT/giphy.gif?cid=790b761114885a46a74f636cb3c5033e0935984fc71e793f&rid=giphy.gif&ct=g"
+              alt="umutdev.xyz 404 not found image"
+              draggable="false"
+            />
+          </center>
         </div>
       </div>
     </div>
