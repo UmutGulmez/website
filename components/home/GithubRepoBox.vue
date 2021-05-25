@@ -26,7 +26,7 @@
         <div class="level is-mobile">
           <div class="level-left">
             <div class="content lang">
-              {{ lang }}
+              <i :class="'fab fa-' + faLang"></i> {{ lang }}
             </div>
           </div>
           <div class="level-right starCount">
@@ -42,7 +42,18 @@
 
 <script>
 export default {
+  data() {
+    return {
+      faLang: '',
+    }
+  },
   props: ['name', 'desc', 'starCount', 'lang', 'url'],
+  mounted() {
+    this.faLang = this.lang
+      .replace('Vue', 'vuejs')
+      .replace('HTML', 'html5')
+      .replace('TypeScript', '')
+  },
 }
 </script>
 
