@@ -115,6 +115,8 @@ export default {
     '@nuxtjs/axios',
     // https://http.nuxtjs.org/setup
     '@nuxt/http',
+    // https://sitemap.nuxtjs.org/
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -122,4 +124,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  sitemap: {
+    hostname: 'https://www.umutdev.xyz',
+  },
 }
