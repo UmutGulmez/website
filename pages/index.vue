@@ -12,7 +12,8 @@
         </div>
       </div>
       <div style="margin: 150px 0"></div>
-      <Blogs />
+      <div class="title is-4 has-text-centered">My Pinned Blogs</div>
+      <PinnedBlogs :isHalf="true" :count="6" />
       <div style="margin: 150px 0"></div>
       <GithubRepos />
     </div>
@@ -27,8 +28,8 @@ import Footer from '~/components/common/Footer'
 import Banner from '~/components/home/Banner'
 import TechsBox from '~/components/home/TechsBox'
 import WhoAmIBox from '~/components/home/WhoAmIBox'
-import Blogs from '~/components/home/Blogs'
 import GithubRepos from '~/components/home/GithubRepos'
+import PinnedBlogs from '~/components/blog/PinnedBlogs.vue'
 
 export default {
   components: {
@@ -37,7 +38,7 @@ export default {
     Banner,
     TechsBox,
     WhoAmIBox,
-    Blogs,
+    PinnedBlogs,
     GithubRepos,
   },
 }

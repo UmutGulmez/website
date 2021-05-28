@@ -3,7 +3,16 @@
     "builds": [
       {
         "src": "nuxt.config.js",
-        "use": "@nuxtjs/vercel-builder"
+        "use": "@nuxtjs/vercel-builder",
+        "config": {
+          "serverFiles": [
+            "server-middleware/**",
+            "utils/**",
+            ".nuxt/content/**",
+            "content/**",
+            "./.nuxt/dist/sitemap-routes.json"
+          ]
+        }
       }
     ]
   }

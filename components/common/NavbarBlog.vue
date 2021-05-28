@@ -1,17 +1,18 @@
 <template>
   <b-navbar wrapper-class="container">
     <template #brand>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        umutdev.xyz
+      <b-navbar-item
+        tag="router-link"
+        class="navbar-brand"
+        :to="{ path: '/blog' }"
+      >
+        umutdev.xyz/blog
       </b-navbar-item>
     </template>
 
     <template #end>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         Home
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/blog' }">
-        Blog
       </b-navbar-item>
     </template>
   </b-navbar>
@@ -24,8 +25,9 @@ export default {}
 
 <style lang="scss" scoped>
 .navbar {
-  background-color: var(--color-secondary);
-  padding: 10px 0;
+  background-color: var(--color-first);
+  padding: 32px 0;
+  margin-bottom: 4rem;
 }
 
 a {
@@ -41,14 +43,16 @@ a {
 .navbar-item {
   padding: 0.7rem 2rem;
   &:hover {
-    background-color: var(--color-third) !important;
     transition: all 0.4s;
   }
   &:focus,
   :focus-within {
-    background-color: var(--color-third) !important;
     transition: all 0.4s;
     color: var(--text-first) !important;
   }
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
 }
 </style>

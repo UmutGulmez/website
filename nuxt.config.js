@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
 
@@ -92,6 +94,11 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap',
+      },
     ],
   },
 
@@ -115,8 +122,12 @@ export default {
     '@nuxtjs/axios',
     // https://http.nuxtjs.org/setup
     '@nuxt/http',
+    //https://content.nuxtjs.org/
+    '@nuxt/content',
     // https://sitemap.nuxtjs.org/
     '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/moment-module
+    '@nuxtjs/moment',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -127,5 +138,14 @@ export default {
 
   sitemap: {
     hostname: 'https://www.umutdev.xyz',
+    routes() {
+      return getRoutes()
+    },
+  },
+
+  moment: {
+    defaultLocale: 'tr',
+    locales: ['tr'],
+    defaultTimezone: 'Turkey/Istanbul',
   },
 }
