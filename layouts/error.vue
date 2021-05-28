@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container wrapper">
       <div class="columns">
         <div class="column is-half">
           <p class="title has-text-white">404</p>
@@ -67,9 +67,7 @@ a {
   }
 }
 
-footer {
-  bottom: 0;
-  position: absolute;
-  width: 200vh;
+.wrapper {
+  min-height: calc(100vh - 100px);
 }
 </style>

@@ -9,7 +9,6 @@
 
 html,
 body {
-  background-color: var(--color-first);
   font-family: 'Comfortaa', cursive !important;
   scroll-behavior: smooth;
 }
@@ -68,6 +67,55 @@ i {
   color: var(--text-first);
 }
 
+hr {
+  background-color: var(--text-third);
+  margin: 1rem 0;
+}
+
+.nuxt-content {
+  & h1,
+  h2,
+  h3 {
+    color: var(--text-first);
+  }
+  & p {
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+    & code {
+      background-color: var(--color-third);
+      color: var(--text-secondary);
+    }
+  }
+}
+
+.wrapper {
+  min-height: calc(100vh - 288px);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .navbar-menu {
-  background-color: var(--color-secondary) !important;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.notification-badge {
+  position: relative;
+}
+.notification-badge[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1em;
+  background: red;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
