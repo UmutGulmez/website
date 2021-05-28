@@ -46,9 +46,7 @@ export default {
 
   async fetch() {
     //http://localhost:3000/_content/articles
-    const articles = await fetch(
-      'http://localhost:3000/_content/articles'
-    ).then((res) => res.json())
+    const articles = await this.$content('articles').fetch()
 
     this.articles = articles
   },

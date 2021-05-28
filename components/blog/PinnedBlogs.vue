@@ -47,9 +47,8 @@ export default {
   props: ['isHalf', 'count'],
   async fetch() {
     //http://localhost:3000/_content/articles
-    const articles = await fetch(
-      'http://localhost:3000/_content/articles'
-    ).then((res) => res.json())
+    const articles = await this.$content('articles').fetch()
+
     const pinnedArticles = articles
       .filter((article) => article.pinned)
       .slice(0, this.count || 4)
