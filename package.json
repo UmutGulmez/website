@@ -20,7 +20,8 @@
     "nuxt": "^2.15.3",
     "nuxt-buefy": "^0.4.4",
     "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.1.0",
