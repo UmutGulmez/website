@@ -37,9 +37,14 @@
       <br />
       <p class="title is-6 has-text-white has-text-centered">Yazı Etiketleri</p>
       <p class="tags">
-        <span class="tag" v-for="tag in article.tags" :key="tag">
-          {{ tag }}</span
+        <nuxt-link
+          :to="'/blog/list?tag=' + tag"
+          v-for="tag in article.tags"
+          :key="tag"
+          class="tag"
         >
+          {{ tag }}
+        </nuxt-link>
       </p>
     </div>
   </div>
