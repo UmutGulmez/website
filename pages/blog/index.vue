@@ -10,6 +10,8 @@
 
         <h2 class="title is-3 has-text-white">All Blogs</h2>
         <Blogs />
+        <div class="my-6"></div>
+        <FilterByTagBox />
       </div>
     </div>
   </div>
@@ -18,11 +20,13 @@
 <script>
 import PinnedBlogs from '~/components/blog/PinnedBlogs.vue'
 import Blogs from '~/components/blog/Blogs.vue'
+import FilterByTagBox from '~/components/blog/FilterByTagBox.vue'
 
 export default {
   components: {
     PinnedBlogs,
     Blogs,
+    FilterByTagBox,
   },
   layout: 'blog',
 }
