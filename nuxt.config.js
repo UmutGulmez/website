@@ -130,6 +130,9 @@ export default {
     '@nuxtjs/moment',
   ],
 
+  //Loading component
+  loading: '~/components/loading.vue',
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
