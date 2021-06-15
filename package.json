@@ -21,7 +21,10 @@
     "nuxt-buefy": "^0.4.4",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
-    "vue-gtag": "^1.16.1"
+    "vue-gtag": "^1.16.1",
+    "normalize-url": ">=4.5.1",
+    "trim-newlines": ">=3.0.1",
+    "ws": ">=7.4.6"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.1.0",
