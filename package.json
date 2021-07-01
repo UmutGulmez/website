@@ -18,7 +18,7 @@
     "core-js": "^3.9.1",
     "node-sass": "^5.0.0",
     "nuxt": "^2.15.7",
-    "nuxt-buefy": "^0.4.4",
+    "nuxt-buefy": "^0.4.8",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "vue-gtag": "^1.16.1",
