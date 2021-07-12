@@ -24,7 +24,7 @@
     "vue-gtag": "^1.16.1",
     "normalize-url": ">=6.1.0",
     "trim-newlines": ">=3.0.1",
-    "ws": ">=7.5.2"
+    "ws": ">=7.5.3"
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.12",
