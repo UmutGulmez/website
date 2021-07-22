@@ -9,7 +9,7 @@
         most of the things that I can learn, although I am mostly focused on
         JavaScript. I enjoy sharing my projects as open source. So this website
         is open source!
-        <a href="https://github.com/UmutGulmez/umutgulmez.github.io">
+        <a href="https://github.com/UmutGulmez/website">
           Check out my Github!
         </a>
       </p>
