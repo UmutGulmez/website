@@ -8,7 +8,7 @@
       <p class="descriptipon content mb-1">
         {{ desc }}
       </p>
-      <div class="bottom">
+      <div class="bottom mt-4">
         <div class="level is-mobile">
           <div class="level-left">
             <div class="content lang">
@@ -59,6 +59,10 @@ export default {
 
 a.title {
   color: var(--text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   &:hover {
     color: var(--text-first);
   }
@@ -66,7 +70,11 @@ a.title {
 
 .descriptipon {
   color: var(--text-secondary);
-  min-height: 65px;
+  height: 48px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .lang,
