@@ -25,17 +25,12 @@
           <Socials />
         </div>
       </div>
-      <div class="column is-3">
-        <div class="now-playing-div">
-          <NowPlaying />
-        </div>
-      </div>
+      <div class="column is-3"></div>
     </div>
   </div>
 </template>
 
 <script>
-import NowPlaying from '~/components/home/SpotifyNowPlaying'
 import Socials from '~/components/Socials'
 
 export default {
@@ -45,7 +40,6 @@ export default {
     }
   },
   components: {
-    NowPlaying,
     Socials,
   },
   mounted() {
