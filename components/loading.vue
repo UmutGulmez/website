@@ -7,11 +7,11 @@
 <script>
 export default {
   data: () => ({
-    loading: true,
+    loading: false,
   }),
   methods: {
     start() {
-      this.loading = true
+      this.loading = false
     },
     finish() {
       this.loading = false
