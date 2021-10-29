@@ -5,7 +5,7 @@
         <div class="column is-one-quarter">
           <SidebarLeft :article="article" />
         </div>
-        <div class="column">
+        <div class="column is-half">
           <div v-if="$fetchState.pending">
             <h3 class="title is-2 has-text-centered has-text-white">
               Makale yükleniyor.. .
@@ -27,7 +27,10 @@
           </center>
         </div>
         <div
-          class="column is-one-quarter is-hidden-tablet-only is-hidden-desktop-only"
+          class="
+            column
+            is-one-quarter is-hidden-tablet-only is-hidden-desktop-only
+          "
         >
           <SidebarRight />
         </div>
