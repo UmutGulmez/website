@@ -49,7 +49,9 @@ export default {
     //http://localhost:3000/_content/articles
     const articles = await this.$content('articles').fetch()
     const tag = this.$route.query.tag
-    var filteredArticles = articles
+    var filteredArticles = articles.sort((a, b) => {
+      return new Date(b.createdAt) - new Date(a.createdAt)
+    })
 
     if (tag) {
       filteredArticles = filteredArticles.filter((article) =>
