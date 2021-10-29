@@ -12,7 +12,7 @@ tags:
 createdAt: 2021-10-30T20:13:18+00:00
 readingTime: 12 dakika
 pinned: true
-bannerImage: https://cdn-images-1.medium.com/max/800/0*bpg59iYcwnPnY1PV
+bannerImage: /nginxBanner.png
 ---
 
 Merhaba, bir zaman önce **Node.js(Express.js)** ile geliştirdiğim bir web uygulamasını deploy etmek istemiştim, bu süreçte yaşadığım deneyimleri bir blog yazısında konu almayı düşündüm.
