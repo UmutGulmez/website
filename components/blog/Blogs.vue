@@ -46,9 +46,11 @@ export default {
 
   async fetch() {
     //http://localhost:3000/_content/articles
-    const articles = await this.$content('articles').fetch()
-
-    this.articles = articles
+    const rawArticles = await this.$content('articles').fetch()
+    var sortedArticles = rawArticles.sort((a, b) => {
+      return new Date(b.createdAt) - new Date(a.createdAt)
+    })
+    this.articles = sortedArticles
   },
 }
 </script>

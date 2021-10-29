@@ -52,6 +52,9 @@ export default {
     const pinnedArticles = articles
       .filter((article) => article.pinned)
       .slice(0, this.count || 4)
+      .sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt)
+      })
 
     this.pinnedArticles = pinnedArticles
   },

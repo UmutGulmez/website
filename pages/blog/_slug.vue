@@ -69,6 +69,20 @@ export default {
   head() {
     return {
       title: this.article.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.description,
+        },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://umutdev.xyz/blog/${this.$route.params.slug}`,
+        },
+      ],
     }
   },
   layout: 'blog',
