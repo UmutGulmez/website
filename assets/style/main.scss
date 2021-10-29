@@ -26,6 +26,20 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  background-color: var(--color-secondary);
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-third);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: transparentize($color: #334155, $amount: 0.4);
+}
+
 h1,
 h2,
 h3,
