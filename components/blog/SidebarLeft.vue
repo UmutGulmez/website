@@ -47,11 +47,31 @@
         </nuxt-link>
       </p>
     </div>
+    <div class="box">
+      <a @click="isTitlesModalActive = true" class="titles-link">
+        Makalenin başlıklarını gör
+      </a>
+    </div>
+    <b-modal v-model="isTitlesModalActive">
+      <template #default="props">
+        <TitlesModalCard @close="props.close" :titles="article.toc" />
+      </template>
+    </b-modal>
   </div>
 </template>
 
 <script>
+import TitlesModalCard from './TitlesModalCard.vue'
+
 export default {
+  data() {
+    return {
+      isTitlesModalActive: false,
+    }
+  },
+  components: {
+    TitlesModalCard,
+  },
   props: ['article'],
   methods: {
     beautifyDate(utc) {
@@ -85,5 +105,13 @@ export default {
 
 .level:not(:last-child) {
   margin-bottom: 0.85rem;
+}
+
+.titles-link {
+  color: var(--text-secondary);
+  &:hover {
+    color: var(--text-first);
+    text-decoration: underline;
+  }
 }
 </style>
