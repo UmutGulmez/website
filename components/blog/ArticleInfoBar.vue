@@ -23,7 +23,7 @@
           <i class="fab fa-twitter"></i>
         </a>
         <a>
-          <i class="fas fa-link"></i>
+          <i class="fas fa-link" @click="copyLink()"></i>
         </a>
       </p>
     </div>
@@ -31,6 +31,9 @@
 </template>
 
 <script>
+import useClipboard from 'vue-clipboard3'
+const { toClipboard } = useClipboard()
+
 export default {
   props: ['article'],
   methods: {
@@ -38,6 +41,12 @@ export default {
       var date = this.$moment(utc).format('DD-MM-YYYY')
 
       return date
+    },
+    async copyLink() {
+      await toClipboard(`https://umutdev.xyz${this.$route.fullPath}`)
+      this.$buefy.snackbar.open({
+        message: `Sayfa bağlantısı başarılı bir şekilde kopyalandı!`,
+      })
     },
   },
 }
