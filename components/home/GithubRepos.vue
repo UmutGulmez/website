@@ -7,7 +7,7 @@
       <div
         class="column is-one-third"
         v-for="repo in repositoryData"
-        :key="repo"
+        :key="repo.id"
       >
         <GithubRepoBox
           :name="repo.name"
