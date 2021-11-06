@@ -17,15 +17,16 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.9.1",
     "node-sass": "^5.0.0",
-    "normalize-url": ">=4.5.1",
     "nuxt": "^2.15.3",
     "nuxt-buefy": "^0.4.4",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "trim-newlines": ">=3.0.1",
-    "vue-clipboard3": "^1.0.1",
+    "ws": ">=7.4.6",
     "vue-gtag": "^1.16.1",
-    "ws": ">=7.4.6"
+    "normalize-url": ">=4.5.1",
+    "vue-clipboard3": "^1.0.1"
+
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.12",
