@@ -1,0 +1,36 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxt/http": "^0.6.4",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "core-js": "^3.9.1",
+    "node-sass": "^5.0.0",
+    "normalize-url": ">=4.5.1",
+    "nuxt": "^2.15.3",
+    "nuxt-buefy": "^0.4.4",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "trim-newlines": ">=3.0.1",
+    "vue-clipboard3": "^1.0.1",
+    "vue-gtag": "^1.16.1",
+    "ws": ">=7.4.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
