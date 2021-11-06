@@ -21,11 +21,18 @@
     "nuxt-buefy": "^0.4.10",
     "sass": "^1.43.2",
     "sass-loader": "^10.1.1",
+    "trim-newlines": ">=3.0.1",
+    "ws": ">=7.4.6",
     "vue-gtag": "^1.16.1",
+<<<<<<< HEAD
     "normalize-url": ">=4.5.1",
-    "vue-clipboard3": "^1.0.1",
+    "vue-clipboard3": "^1.0.1"
+
+=======
+    "normalize-url": ">=7.0.2",
     "trim-newlines": ">=3.0.1",
     "ws": ">=8.2.3"
+>>>>>>> cde94bb766321f160db007f44959631a52c95189
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.3.0",
