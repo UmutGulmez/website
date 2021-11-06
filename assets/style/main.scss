@@ -63,6 +63,7 @@ h4 {
 
 a {
   color: var(--text-secondary);
+  word-break: break-all;
   &:hover {
     color: var(--text-first);
   }
