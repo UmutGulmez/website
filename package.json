@@ -17,7 +17,7 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "core-js": "^3.18.2",
     "node-sass": "^5.0.0",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.0.0",
     "nuxt-buefy": "^0.4.10",
     "sass": "^1.43.2",
     "sass-loader": "^10.1.1",
