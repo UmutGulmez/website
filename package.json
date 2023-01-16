@@ -31,6 +31,6 @@
     "@nuxtjs/svg": "^0.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.8.3"
   }
 }
