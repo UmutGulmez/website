@@ -86,18 +86,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },
       {
         rel: 'stylesheet',
-        href:
-          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap',
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap',
       },
     ],
   },

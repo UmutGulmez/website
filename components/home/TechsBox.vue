@@ -1,30 +1,18 @@
 <template>
-  <div class="box bg-color-secondary min-370px-height">
+  <div class="box bg-color-secondary min-410px-height">
     <p class="heading has-text-centered">Technologies I Use</p>
     <br />
     <div class="columns is-multiline">
       <div class="column is-half">
         <div class="box language">
+          <i class="fab fa-golang language-icon"></i>
+          <span class="language-text">GoLang</span>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box language">
           <i class="fab fa-js-square language-icon"></i>
           <span class="language-text">JavaScript</span>
-        </div>
-      </div>
-      <div class="column is-half">
-        <div class="box language">
-          <i class="fab fa-html5 language-icon"></i>
-          <span class="language-text">HTML5</span>
-        </div>
-      </div>
-      <div class="column is-half">
-        <div class="box language">
-          <i class="fab fa-vuejs language-icon"></i>
-          <span class="language-text">Vue.js & Nuxt.js</span>
-        </div>
-      </div>
-      <div class="column is-half">
-        <div class="box language">
-          <i class="fab fa-sass language-icon"></i>
-          <span class="language-text">Sass</span>
         </div>
       </div>
       <div class="column is-half">
@@ -35,8 +23,32 @@
       </div>
       <div class="column is-half">
         <div class="box language">
+          <i class="fab fa-vuejs language-icon"></i>
+          <span class="language-text">Vue.js & Nuxt.js</span>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box language">
+          <i class="fab fa-css3 language-icon"></i>
+          <span class="language-text">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box language">
           <i class="fab fa-python language-icon"></i>
           <span class="language-text">Python</span>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box language">
+          <i class="fab fa-m language-icon is-size-6"></i>
+          <span class="language-text">Metasploit</span>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box language">
+          <i class="fa-solid fa-bolt language-icon is-size-6"></i>
+          <span class="language-text">Zap</span>
         </div>
       </div>
     </div>

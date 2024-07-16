@@ -4,7 +4,7 @@
     <div class="container">
       <Banner />
       <div class="columns">
-        <div class="column">
+        <div class="column is-three-fifths">
           <WhoAmIBox />
         </div>
         <div class="column">
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Navbar from '~/components/common/Navbar'
+import Navbar from '~/components/common/Navbar.vue'
 import Footer from '~/components/common/Footer'
 import Banner from '~/components/home/Banner'
 import TechsBox from '~/components/home/TechsBox'

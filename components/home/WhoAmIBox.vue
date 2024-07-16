@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="box bg-color-secondary min-370px-height">
+    <div class="box bg-color-secondary min-410px-height">
       <p class="heading has-text-centered">Who am I?</p>
       <br />
       <p class="whoami-text">
-        I am a Turkish science high school student interested in coding. My goal
-        is to make things that people can easily use. I'm trying to learn most
-        of the things that I can learn, although I am mostly focused on
-        JavaScript. I enjoy sharing my projects as open source. So this website
-        is open source!
-        <a href="https://github.com/UmutGulmez/website">
-          Check out my Github!
-        </a>
+        For the past eight years, I have been devoted to the craft of software
+        development. I take great pleasure in bringing forth intelligent,
+        problem-solving products from the void. Currently, I am a first-year
+        university student, diligently sharpening my extensive foundational
+        knowledge in computer science, acquired across various domains, into
+        specialized expertise in the realms of cybersecurity. Residing in
+        Turkey, I am committed to relentlessly advancing my skills and knowledge
+        with unwavering passion.
       </p>
     </div>
   </div>
