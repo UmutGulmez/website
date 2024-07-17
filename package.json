@@ -21,7 +21,7 @@
     "nuxt-buefy": "^0.4.10",
     "sass": "^1.43.2",
     "sass-loader": "^10.1.1",
-    "vue-gtag": "^1.16.1",
+    "vue-gtag": "^2.0.1",
     "normalize-url": ">=4.5.1",
     "vue-clipboard3": "^1.0.1",
     "trim-newlines": ">=3.0.1",
