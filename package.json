@@ -24,7 +24,7 @@
     "vue-gtag": "^1.16.1",
     "normalize-url": ">=4.5.1",
     "vue-clipboard3": "^1.0.1",
-    "trim-newlines": ">=3.0.1",
+    "trim-newlines": ">=5.0.0",
     "ws": ">=8.2.3"
   },
   "devDependencies": {
